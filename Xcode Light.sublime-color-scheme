@@ -1,0 +1,92 @@
+{
+    "name": "Xcode Light",
+    "author": "Unknown",
+    "variables":
+    {
+        "black": "#000000",
+        "blue": "#a3ccfe",
+        "blue2": "#5d6b79",
+        "blue3": "#0e0eff",
+        "cyan": "#1c4549",
+        "grey": "#cccccc",
+        "pink": "#9a2392",
+        "purple": "#6b36a9",
+        "purple2": "#3900a0",
+        "purple3": "#1c00ce",
+        "red": "#c41a15",
+        "white": "#ffffff",
+        "white2": "#e8f2ff"
+    },
+    "globals":
+    {
+        "foreground": "color(var(black) alpha(0.85))",
+        "background": "var(white)",
+        "caret": "var(pink)",
+        "invisibles": "var(grey)",
+        "line_highlight": "var(white2)",
+        "selection": "var(blue)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, constant.other, source.php.embedded.line",
+            "foreground": "color(var(black) alpha(0.85))"
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit",
+            "foreground": "var(purple3)"
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, support.type, support.class",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, constant.other.color",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level",
+            "foreground": "var(purple2)"
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type, entity.name.tag.css",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "color(var(black) alpha(0.85))"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "foreground": "color(var(black) alpha(0.85))"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "color(var(black) alpha(0.85))"
+        }
+    ]
+}

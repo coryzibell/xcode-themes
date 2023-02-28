@@ -1,0 +1,92 @@
+{
+    "name": "Xcode Dark",
+    "author": "Unknown",
+    "variables":
+    {
+        "black": "#1e1f24",
+        "blue": "#5482fe",
+        "blue2": "#414c5a",
+        "blue3": "#505a6f",
+        "blue4": "#6c7985",
+        "blue5": "#23252b",
+        "cyan": "#9ef0dd",
+        "pink": "#fc5fa2",
+        "purple": "#a166e5",
+        "purple2": "#cfa8ff",
+        "red": "#fc695d",
+        "white": "#ffffff",
+        "yellow": "#cfbf69"
+    },
+    "globals":
+    {
+        "foreground": "color(var(white) alpha(0.85))",
+        "background": "var(black)",
+        "caret": "var(pink)",
+        "invisibles": "var(blue2)",
+        "line_highlight": "var(blue5)",
+        "selection": "var(blue3)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(blue4)"
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, constant.other, source.php.embedded.line",
+            "foreground": "color(var(white) alpha(0.85))"
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, support.type, support.class",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, constant.other.color",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level",
+            "foreground": "var(purple2)"
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type, entity.name.tag.css",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "color(var(white) alpha(0.85))"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "foreground": "color(var(white) alpha(0.85))"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "color(var(white) alpha(0.85))"
+        }
+    ]
+}
